@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    app:cardElevation="2dp"
+    app:strokeWidth="1dp"
+    app:cardCornerRadius="5dp"
+    app:strokeColor="@color/purple_500"
+    android:layout_marginVertical="3dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            tools:text="Sun"
+            android:textSize="@dimen/mid_small"
+            android:id="@+id/tvDay"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="50dp"
+            android:id="@+id/imageWeather"
+            app:srcCompat="@drawable/test1"
+            android:layout_height="50dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            tools:text="28℃"
+            android:id="@+id/tvTemp"
+            android:textSize="@dimen/mid_small"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>

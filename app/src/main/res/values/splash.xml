@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyNews.Mysplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/bg_color</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.MyNews</item>
+    </style>
+</resources>

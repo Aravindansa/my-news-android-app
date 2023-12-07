@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:paddingVertical="8dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            app:srcCompat="@drawable/round_close_24"
+            android:layout_width="30dp"
+            app:tint="@color/grey_dark"
+            android:layout_height="30dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Space News"
+            android:textSize="@dimen/medium"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View
+        android:background="@color/grey_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
