@@ -54,12 +54,15 @@ class NewsFragment : Fragment() {
                     binding!!.recyclerNews.isVisible=false
                 }else if (it.refresh is LoadState.Error){
                     binding!!.recyclerNews.isVisible=false
+                    binding!!.searchView.isVisible=false
                     errorMsg.text = (it.refresh as LoadState.Error).error.localizedMessage
                     loaderContent.isVisible=true
                     progressBar.isVisible=false
                     retryButton.isVisible=true
                     errorMsg.isVisible=true
                 }else{
+                    if (!binding!!.searchView.isVisible)
+                        binding!!.searchView.isVisible=true
                     binding!!.recyclerNews.isVisible=true
                     loaderContent.isVisible=false
                 }
@@ -88,12 +91,15 @@ class NewsFragment : Fragment() {
                 override fun onQueryTextChange(newText: String?): Boolean {
                     if(searchView.hasFocus())
                         viewModel.search(newText)
+
                     return false
                 }
 
             })
             swipeRefresh.setOnRefreshListener {
                swipeRefresh.isRefreshing=false
+                searchView.setQuery("",false)
+                viewModel.currentQuery.value=""
                 newsAdapter?.refresh()
             }
         }

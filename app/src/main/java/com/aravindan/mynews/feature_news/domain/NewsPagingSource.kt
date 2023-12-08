@@ -20,7 +20,7 @@ class NewsPagingSource(val database: AppDatabase, val api: Api, val context: Con
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, News> {
         return try {
             val dbNewsCount=database.appDao().getCount()
-            if (query.isNullOrEmpty() && MyUtil.isOnline(context)){
+            if (query?.trim().isNullOrEmpty() && MyUtil.isOnline(context)){
                 val offset=params.key?: STARTING_OFFSET
                 val news=api.getNews(offset = offset)
                 if (news.isSuccess){
@@ -61,4 +61,5 @@ class NewsPagingSource(val database: AppDatabase, val api: Api, val context: Con
             LoadResult.Error(e)
         }
     }
+
 }

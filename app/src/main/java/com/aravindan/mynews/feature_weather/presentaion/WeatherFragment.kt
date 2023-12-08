@@ -158,7 +158,9 @@ class WeatherFragment : Fragment() {
                 imgCurrentWeather.loadImage("https:"+day?.condition?.icon)
                 tvCondition.text=day?.condition?.text
                 tvTemp.text="${day?.avgtempC}℃"
-                tvPercip.text="${day?.totalprecipMm} mm"
+                val foreCast=viewModel.forecastDay.value
+                tvPercip.text="${foreCast?.day?.totalprecipMm} mm"
+            //    tvPercip.text="${day?.totalprecipMm} mm"
                 tvWind.text="${day?.maxwindKph} Km/h"
                 tvHumidity.text="${day?.avghumidity}%"
             }
@@ -172,7 +174,8 @@ class WeatherFragment : Fragment() {
             imgCurrentWeather.loadImage("https:"+data.current?.condition?.icon)
             tvCondition.text=data.current?.condition?.text
             tvTemp.text="${data.current?.tempC}℃"
-            tvPercip.text="${data.current?.precipMm} mm"
+            val foreCast=viewModel.forecastDay.value
+            tvPercip.text="${foreCast?.day?.totalprecipMm} mm"
             tvWind.text="${data.current?.windKph} Km/h"
             tvHumidity.text="${data.current?.humidity}%"
         }

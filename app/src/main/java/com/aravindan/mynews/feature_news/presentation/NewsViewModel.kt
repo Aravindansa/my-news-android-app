@@ -1,7 +1,5 @@
 package com.aravindan.mynews.feature_news.presentation
 
-
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -20,7 +18,7 @@ class NewsViewModel @Inject constructor(
     private val repository: NewsRepository
 ) :ViewModel(){
     var newsList: LiveData<PagingData<News>>
-    private val currentQuery = MutableLiveData<String?>()
+     val currentQuery = MutableLiveData<String?>()
     init {
         currentQuery.value = ""
         newsList= currentQuery.switchMap {

@@ -1,4 +1,4 @@
-package com.aravindan.mynews
+package com.aravindan.mynews.core.util
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
