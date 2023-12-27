@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_news"
-        android:name="com.aravindan.mynews.feature_news.presentation.NewsFragment"
+        android:name="com.sa.mynews.feature_news.presentation.NewsFragment"
         android:label="@string/title_news"
         tools:layout="@layout/fragment_news" />
 
     <fragment
         android:id="@+id/navigation_weather"
-        android:name="com.aravindan.mynews.feature_weather.presentaion.WeatherFragment"
+        android:name="com.sa.mynews.feature_weather.presentaion.WeatherFragment"
         android:label="@string/title_weather"
         tools:layout="@layout/fragment_weather" />
 
