@@ -1,5 +1,5 @@
 # About App:
-This app will showcase the latest news with pagination, provide real-time weather updates, and offer a five-day air quality forecast, complete with graphical representations.
+This app seamlessly delivers the latest news with smooth pagination, offers real-time updates on weather and air quality, and presents a comprehensive three-day forecast accompanied by engaging graphical representations.
 
 # Key features and functionalities
 * **Clean Architecture**
