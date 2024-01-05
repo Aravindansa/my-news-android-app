@@ -13,3 +13,4 @@ This app seamlessly delivers the latest news with smooth pagination, offers real
 * **Landscape Orientation Support**
 * **Location Permission Handling**
 * **Splash API**
+![Screen 1](https://prnt.sc/rYiau6zwiRBI)
