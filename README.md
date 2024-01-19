@@ -13,6 +13,6 @@ This app will display the latest news, current weather, and air quality forecast
 * **Landscape Orientation Support**
 * **Location Permission Handling**
 * **Splash API**
-<img src="https://github.com/Aravindansa/my-news-android-app/blob/main/screen%20shots/Screenshot_20231230-093952_My%20News.jpg" width="280" height="600">
-<img src="https://github.com/Aravindansa/my-news-android-app/blob/main/screen%20shots/Screenshot_20231230-102949_My%20News.jpg" width="280" height="600">
-<img src="https://github.com/Aravindansa/my-news-android-app/blob/main/screen%20shots/Screenshot_20231230-103000_My%20News.jpg" width="280" height="600">
+<img src="https://github.com/Aravindansa/my-news-android-app/blob/main/screen%20shots/Screenshot_20231230-093952_My%20News.jpg" width="270" height="590">
+<img src="https://github.com/Aravindansa/my-news-android-app/blob/main/screen%20shots/Screenshot_20231230-102949_My%20News.jpg" width="270" height="590">
+<img src="https://github.com/Aravindansa/my-news-android-app/blob/main/screen%20shots/Screenshot_20231230-103000_My%20News.jpg" width="270" height="590">
